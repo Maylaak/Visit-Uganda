@@ -1,0 +1,150 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#webTitle{
+  font-size:50px;
+  text-align:center;
+}
+
+header {
+	background-color: #004d40;
+	color: #fff;
+	padding: 5%;
+}
+
+@keyframes fadeIn {
+    0% {
+        color: #eefbfa;
+    }
+    50% {
+        color: #103417;
+    }
+    100% {
+        color: #25542e;
+    }
+}
+
+#welcomeText{
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    color:#25542e;
+
+}
+
+h1 {
+	margin: 0;
+}
+
+nav ul {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+nav ul li {
+    text-align: center;
+    list-style-type: none;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+@media all and (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media all and (min-width: 800px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center
+    }
+}
+nav li a:hover{
+  color:#c9c9c9;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+main {
+	margin: 4%;
+}
+section {
+	margin-bottom: 4%;
+}
+.tinyPicture {
+  height: 60px;
+  border-radius: 10px;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #F0FFFF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #eefbfa;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+.picLink{
+  text-decoration: none;
+}
+.card:hover {
+  border-color: #004d40;
+  background-color: #b5fad3;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+h2 {
+	margin-top: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-position: inside;
+}
+@keyframes enter {
+    from {
+        width: 100px;
+    }
+    to {
+        width: 500px;
+    }
+}
+div.center {
+    text-align: center;
+  }
+
+#video{
+  animation-name: enter;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+footer {
+  	background-color: #eee;
+  	padding: 4%;
+	  text-align: center;    
+	  color: #003366;
+    border: 2px ridge #ccffff;
+}
+
+img{
+  border-radius:20px;
+}
+
+table{
+  border: 2px solid black;
+  padding:5px;
+}
